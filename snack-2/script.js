@@ -5,17 +5,7 @@ const people = [
 ];
 
 // Stampa in console tutti i nomi
-const namePeople = people.map(peopleName => `${peopleName.name}`)
-
-let namesString = '';
-
-namePeople.forEach((name, index) => {
-  namesString += name;
-
-  if (index < namePeople.length - 1) {
-    namesString += ', ';
-  }
-});
+const namesString = people.map(person => person.name).join(', ');
 
 console.log(namesString);
 

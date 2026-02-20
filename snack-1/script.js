@@ -1,16 +1,8 @@
 const names = ['Edoardo', 'Simone', 'Francesco'];
 
 // Stampa in console tutti i nomi
-let namesString = '';
+const stringNames = names.map(name => name).join(', ');
 
-names.forEach((name, index) => {
-    namesString += name;
-
-    if (index < names.length) {
-        namesString += ', ';
-    }
-});
-
-console.log(namesString);
+console.log(stringNames);
 
 // Risultato: 'Edoardo', 'Simone', 'Francesco'
