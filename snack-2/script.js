@@ -5,4 +5,8 @@ const people = [
 ];
 
 // Stampa in console tutti i nomi
+const namePeople = people.map(peopleName => `${peopleName.name}`)
+
+console.log(namePeople);
+
 // Risultato: 'Paolo', 'Giulia', 'Marco'
