@@ -7,6 +7,16 @@ const people = [
 // Stampa in console tutti i nomi
 const namePeople = people.map(peopleName => `${peopleName.name}`)
 
-console.log(namePeople);
+let namesString = '';
+
+namePeople.forEach((name, index) => {
+  namesString += name;
+
+  if (index < namePeople.length - 1) {
+    namesString += ', ';
+  }
+});
+
+console.log(namesString);
 
 // Risultato: 'Paolo', 'Giulia', 'Marco'
